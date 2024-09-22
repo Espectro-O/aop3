@@ -1,0 +1,159 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #586f7c;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #586f7c;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+
+/* Margens e centralização */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #586f7c;
+}
+
+select, input[type="date"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #b8dbd9;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f4f4f9;
+    color: #2f4550;
+}
+
+select:hover, input[type="date"]:hover {
+    border-color: #586f7c;
+    box-shadow: 0 0 5px rgba(88, 111, 124, 0.2);
+}
+
+select:focus, input[type="date"]:focus {
+    border-color: #586f7c;
+    box-shadow: 0 0 8px rgba(88, 111, 124, 0.5);
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2f4550;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    color: #000000;
+}
+
+tr:hover {
+    background-color: #f4f4f9;
+    cursor: pointer;
+}
+
+/* Informações adicionais */
+.precosPorBairro2 {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.precosPorBairro2 h3 {
+    color: #586f7c;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.precosPorBairro2 table {
+    width: 100%;
+}
+
+.precosPorBairro2 td {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2f4550;
+    color: white;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Efeito de transição */
+select, input[type="date"], th, td, .precosPorBairro2, footer {
+    transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table, .precosPorBairro2 {
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    select, input[type="date"] {
+        width: 100%;
+        max-width: 350px;
+    }
+}
